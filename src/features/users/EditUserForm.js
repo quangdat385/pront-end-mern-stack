@@ -47,6 +47,7 @@ const EditUserForm = ({ user }) => {
             setPassword('')
             setRoles([])
             navigate('/dash/users')
+            
         }
 
     }, [isSuccess, isDelSuccess, navigate])
