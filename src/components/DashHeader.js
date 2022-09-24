@@ -22,7 +22,8 @@ const DashHeader = () => {
 
     const navigate = useNavigate()
     const { pathname } = useLocation()
-
+    console.log(pathname)
+    console.log(NOTES_REGEX.test(pathname))
     const [sendLogout, {
         isLoading,
         isSuccess,

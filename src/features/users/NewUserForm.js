@@ -117,6 +117,7 @@ const NewUserForm = () => {
                     name="password"
                     type="password"
                     value={password}
+                    au
                     onChange={onPasswordChanged}
                 />
 

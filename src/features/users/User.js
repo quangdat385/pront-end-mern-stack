@@ -5,7 +5,7 @@ import { useGetUsersQuery } from './usersApiSlice'
 import { memo } from 'react'
 
 const User = ({ userId }) => {
-
+    // const user = useSelector(state => selectUserById(state, userId))
     const { user } = useGetUsersQuery("usersList", {
         selectFromResult: ({ data }) => ({
             user: data?.entities[userId]

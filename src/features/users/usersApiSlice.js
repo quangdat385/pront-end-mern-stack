@@ -31,8 +31,8 @@ export const usersApiSlice = apiSlice.injectEndpoints({
                         ...result.ids.map(id => ({ type: 'User', id }))
                     ]
                 } else return [{ type: 'User', id: 'LIST' }]
-            }
-
+            },
+            
 
         }),
         addNewUser: builder.mutation({
